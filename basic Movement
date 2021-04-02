@@ -5,6 +5,8 @@ import time
 #take off
 tello.connect()
 tello.takeoff()
+# you might want to turn on video
+
 #defalt takeoff alt = 2.667ft
 #leg one
 tello.move_up(101)
@@ -22,6 +24,9 @@ tello.move_up(31)
 tello.move_forward(92)
 # leg five 
 tello.rotate_counter_clockwise(90)
+
+# suggest you add a pause and send an alert
+
 tello.move_forward(183)
 #landing 
 tello.land()
