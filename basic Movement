@@ -1,0 +1,27 @@
+from djitellopy import Tello
+tello = Tello()
+import time
+
+#take off
+tello.connect()
+tello.takeoff()
+#defalt takeoff alt = 2.667ft
+#leg one
+tello.move_up(101)
+tello.move_forward(152)
+#leg two
+tello.rotate_counter_clockwise(90)
+tello.move_forward(183)
+#leg three 
+tello.move_down(91)
+tello.rotate_clockwise(90)
+tello.move_forward(92)
+# leg four 
+tello.rotate_clockwise(90)
+tello.move_up(31)
+tello.move_forward(92)
+# leg five 
+tello.rotate_counter_clockwise(90)
+tello.move_forward(183)
+#landing 
+tello.land()
